@@ -1,0 +1,10 @@
+body {
+  height: 580px; /* Full screen height */
+  width: 1260px;
+
+  background: linear-gradient(
+    to top right,
+    rgba(86, 230, 230, 0.842),
+    rgba(0, 97, 97, 0.969)
+  );
+}

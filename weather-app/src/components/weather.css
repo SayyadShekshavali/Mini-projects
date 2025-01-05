@@ -1,0 +1,110 @@
+.input-style {
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 300px;
+  border-radius: 50px;
+  display: inline;
+  margin-left: -40px;
+  padding: 10px 0px 10px 30px;
+}
+.searchin {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+
+  border-radius: 50px;
+  padding: 10px 0px 0px 10px;
+  height: 35px;
+  width: 35px;
+  background-color: aliceblue;
+}
+.searchbar {
+  place-self: center;
+
+  padding: 30px 0px 0px 0px;
+  padding-left: -20px;
+}
+.weather-icon {
+  height: 160px;
+  width: 160px;
+  place-self: center;
+  margin: 10px 0px 0px 140px;
+  transition: ease-in-out smooth 2s;
+}
+.description {
+  margin: 10px 0px 20px 190px;
+  height: auto;
+  width: auto;
+  font-size: 14px;
+  color: rgb(112, 134, 139);
+}
+.humidity {
+  place-self: center;
+  font-size: 20px;
+  margin-top: 0px;
+  color: blue;
+}
+.tempcf {
+  height: 70px;
+  width: 70px;
+  margin: 0px 0px 0px 0px;
+  place-self: center;
+  display: flex;
+}
+.temparature {
+  margin-top: 0px;
+  font-size: 30px;
+  color: black;
+  width: 40px;
+}
+.togglebtn {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  width: auto;
+  margin-left: 0px;
+  font-size: 15px;
+  margin-top: 0px;
+  padding: 4px 0px 30px 0px;
+}
+.location {
+  margin: -30px 0px 0px 0px;
+
+  place-self: center;
+  font-size: 30px;
+  color: blueviolet;
+}
+.weather-data {
+  margin: 10px 0px 0px 0px;
+  font-size: 13px;
+  display: flex;
+  place-self: center;
+  animation: animawd 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+}
+
+@keyframes animawd {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.weather-data .col {
+  font-size: 15px;
+  margin: 0px 30px 0px 20px;
+}
+.weather-data .col1 {
+  margin: 0px 0px 0px 90px;
+  font-size: 15px;
+}
+.pnghumidity,
+.pngwind {
+  margin-top: 0px;
+  height: 60px;
+  width: 60px;
+}
