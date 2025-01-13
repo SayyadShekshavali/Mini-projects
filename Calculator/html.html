@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calulator</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="inputbox">
+        <input type="text" id="inputtext" placeholder="Enter numbers " />
+      </div>
+      <div class="oparands-operators">
+        <button id="opop" onclick="operation('%')">%</button>
+        <button id="opop" onclick="operation('²')">X<sup>2</sup></button>
+        <button
+          id="opop"
+          style="background-color: rgb(239, 70, 70)"
+          onclick="Allclear()"
+        >
+          AC
+        </button>
+        <button id="opop" onclick="Backspace()">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button id="opop" onclick="appendnumber('1')">1</button>
+        <button id="opop" onclick="appendnumber('2')">2</button>
+        <button id="opop" onclick="appendnumber('3')">3</button>
+        <button id="opop" onclick="operation('/')">/</button>
+        <button id="opop" onclick="appendnumber('4')">4</button>
+        <button id="opop" onclick="appendnumber('5')">5</button>
+        <button id="opop" onclick="appendnumber('6')">6</button>
+        <button id="opop" onclick="operation('*')">X</button>
+        <button id="opop" onclick="appendnumber('7')">7</button>
+        <button id="opop" onclick="appendnumber('8')">8</button>
+        <button id="opop" onclick="appendnumber('9')">9</button>
+        <button id="opop" onclick="operation('+')">+</button>
+        <button id="opop" onclick="operation('-')">-</button>
+        <button id="opop" onclick="appendnumber('0')">0</button>
+        <button id="opop" onclick="appendnumber('.')">.</button>
+        <button
+          id="opop"
+          style="background-color: rgba(255, 255, 0, 0.849)"
+          onclick="calculate()"
+        >
+          =
+        </button>
+        <audio
+          id="audio"
+          src="c:\Users\DELL\Downloads\mixkit-gaming-lock-2848.wav"
+        ></audio>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
