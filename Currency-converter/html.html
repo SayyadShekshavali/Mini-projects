@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converted</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    link
+  </head>
+  <body>
+    <div class="Main">
+      <h1 id="title">Currency Converter</h1>
+      <input id="number" type="number" placeholder="Enter amount to convert" />
+      <div class="converter">
+        <div class="from-block">
+          <h1 id="fromt">From</h1>
+          <select name="select" class="from">
+            <option id="option" value="">Select From</option>
+            <option value="USD">US Dollar</option>
+            <option value="INR">Indian rupees</option>
+            <option value="CAD">canadian dollar</option>
+            <option value="AUD">Austrailian dollar</option>
+            <option value="JYN">Japanese Yan</option>
+            <option value="KWD">Kuwaiti Dinar</option>
+            <option value="SAR">Riyal Saudi</option>
+            <option value="AED">UNEmirates Dirham</option>
+            <option value="BHD">Dinar Bahraini</option>
+            <option value="CNY">Chinese Yuan</option>
+          </select>
+        </div>
+        <i id="c-t" class="fa-solid fa-money-bill-transfer"></i>
+        <div class="to-block">
+          <h1 id="tot">To</h1>
+
+          <select name="select" class="to">
+            <option value="India">Select To</option>
+            <option value="USD">US Dollar</option>
+            <option value="INR">Inr Indian rupees</option>
+            <option value="CAD">canadian dollar</option>
+            <option value="AUD">Austrailian dollar</option>
+            <option value="JYN">Japanese Yan</option>
+            <option value="KWD">Kuwaiti Dinar</option>
+            <option value="SAR">Riyal Saudi</option>
+            <option value="AED">UNEmirates Dirham</option>
+            <option value="BHD">Dinar Bahraini</option>
+            <option value="CNY">Chinese Yuan</option>
+          </select>
+        </div>
+      </div>
+      <button id="c-btn">Convert</button>
+      <div id="result">
+        <div class="images">
+          <img
+            id="img1"
+            src="c:\Users\DELL\OneDrive\圖片\two-business-man-fighting-market-income_3446-463.jpg"
+            alt=""
+          /><img
+            id="img2"
+            src="c:\Users\DELL\Downloads\two-business-man-fighting-market-income_3446-463.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <audio id="audio" src="sound.wav"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
