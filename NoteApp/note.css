@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(220, 231, 231);
+}
+.title {
+  display: flex;
+  height: 60px;
+  width: auto;
+  border-radius: 10px;
+  background-color: rgb(88, 125, 113);
+  margin: 10px 10px 30px 10px;
+}
+.title:hover {
+}
+#icon {
+  padding: 15px 5px 5px 15px;
+  margin-right: 10px;
+  height: 30px;
+  width: 20;
+}
+h1 {
+  margin-top: 25px;
+  font-size: 20px;
+
+  width: auto;
+  height: auto;
+}
+
+.Main {
+  margin: 30px 0px 0px 100px;
+  height: 500px;
+  width: 1000px;
+  border-radius: 30px;
+}
+#Createbtn {
+  margin: 0px 0px 0px 30px;
+  height: 45px;
+  width: 105px;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 0px 0px 0px 0px;
+  background-color: rgb(188, 224, 212);
+  box-shadow: black 0px 0px 4px;
+  border: none;
+}
+#cicon {
+  height: 30px;
+  width: auto;
+}
+.content {
+  margin-bottom: 30px;
+  display: block;
+  animation: tIanimation 1s;
+}
+.content-box {
+  height: auto;
+  width: 600px;
+
+  display: block;
+  border-radius: 15px;
+  box-shadow: rgb(13, 78, 106) 0px 0px 5px;
+}
+@keyframes tIanimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.textarea {
+  height: 130px;
+  width: 90%;
+  list-style: none;
+  font-size: 20px;
+  padding: 10px 5px 5px 10px;
+  margin: 10px 0px 10px 10px;
+  outline: none;
+  border-radius: 30px;
+}
+.images {
+  height: 30px;
+  width: 100px;
+  justify-self: end;
+  padding: 12px 0px 12px 15px;
+}
+.delete,
+.save {
+  margin-right: 5px;
+  height: 30px;
+  width: auto;
+  background-color: transparent;
+}
