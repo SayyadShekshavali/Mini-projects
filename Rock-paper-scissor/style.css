@@ -1,0 +1,154 @@
+.games {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0px 0px 27%;
+}
+#title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 14%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Main-box {
+  margin-top: 0px;
+  height: 280px;
+  width: 600px;
+  border: black solid;
+  position: relative;
+}
+.Computer img {
+  margin-top: 50px;
+  float: left;
+  transform: rotate(90deg);
+  height: 200px;
+  width: 200px;
+}
+.Player img {
+  margin-top: 50px;
+  transform: rotate(-90deg);
+  height: 200px;
+  width: 200px;
+  float: right;
+}
+.score {
+  display: flex;
+  place-self: center;
+  margin-left: -350px;
+  /* border: black solid; */
+}
+#computerh,
+#Userh {
+  font-size: 20px;
+  margin-top: 30px;
+}
+#Computerscore,
+#Userscore {
+  margin: 20px 20px 0px 20px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  border: rgb(195, 255, 209) solid;
+  padding: 6px 6px 0px 6px;
+  height: 40px;
+  border-radius: 5px;
+}
+.Computersecs,
+.Usersecs {
+  margin: 0px 30px 0px 30px;
+  display: flex;
+
+  text-align: center;
+}
+#dash {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.shakecomputer {
+  animation: shakecomputer 1s linear;
+}
+.shakeyou {
+  animation: shakeplayer 1s linear;
+}
+@keyframes shakecomputer {
+  0% {
+    transform: translateX(0px);
+    transform: rotate(60deg);
+  }
+  25% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: translateX(140px);
+    transform: rotate(60deg);
+  }
+  75% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: translateX(0px);
+    transform: rotate(0deg);
+  }
+}
+@keyframes shakeplayer {
+  0% {
+    transform: rotate(-60deg);
+  }
+  25% {
+    transform: rotate(-120deg);
+  }
+  50% {
+    transform: rotate(-60deg);
+  }
+  75% {
+    transform: rotate(-120deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.selection {
+  display: flex;
+  place-self: center;
+  margin-left: -320px;
+  margin-top: -10px;
+}
+#rock,
+#paper,
+#scissor {
+  margin: 0px 50px 0px 50px;
+  height: 45px;
+  width: 90px;
+  border-radius: 5px;
+}
+#rock:hover,
+#paper:hover,
+#scissor:hover {
+  background-color: aqua;
+  box-shadow: black 0px 0px 6px;
+}
+#rock {
+  margin-top: -20px;
+}
+#scissor {
+  margin-top: -20px;
+}
+
+#feedbackpara {
+  position: absolute;
+  font-size: 17px;
+  height: 40px;
+  width: 200px;
+  bottom: -20px;
+  left: 33%;
+  text-align: center;
+}
+@keyframes feedbackanimation {
+  from {
+    transform: translateY(-30);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
