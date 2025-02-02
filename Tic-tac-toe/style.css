@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+
+  margin-top: -350px;
+  margin-right: -280px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.boardp {
+  display: flex;
+}
+.board {
+  margin-left: -80%;
+  margin-top: 45%;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+.board .cell:nth-child(5) {
+  border-right: 5px black solid;
+  border-bottom: 5px black solid;
+  border-left: 5px black solid;
+  border-top: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(1) {
+  border-right: 5px black solid;
+  border-bottom: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(2) {
+  border-right: 5px black solid;
+  border-bottom: 5px black solid;
+  border-left: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(3) {
+  border-bottom: 5px black solid;
+  border-left: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(4) {
+  border-bottom: 5px black solid;
+  border-top: 5px black solid;
+  border-right: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(6) {
+  border-bottom: 5px black solid;
+  border-top: 5px black solid;
+  border-left: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(7) {
+  border-top: 5px black solid;
+  border-right: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(8) {
+  border-top: 5px black solid;
+  border-right: 5px black solid;
+  border-left: 5px black solid;
+
+  border-radius: 0px;
+}
+.board .cell:nth-child(9) {
+  border-top: 5px black solid;
+  border-left: 5px black solid;
+
+  border-radius: 0px;
+}
+.cell {
+  border-radius: 300px;
+  height: 100px;
+  width: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  background-color: aliceblue;
+  /* box-shadow: 1px 1px 2px 2px rgb(0, 0, 0); */
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  margin-top: 50px;
+  animation: lineanima 0.5 linear;
+  border: black solid;
+}
+
+@keyframes lineanima {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.response {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 18%;
+  margin-left: 300px;
+  align-items: center;
+}
+span {
+  display: inline-block;
+  animation: rotate 1s ease infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
