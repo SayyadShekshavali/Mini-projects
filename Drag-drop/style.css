@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(152, 210, 207);
+}
+
+.colorp {
+  outline: none;
+  box-shadow: 1px 1px 3px 3px rgb(71, 40, 40);
+  border-radius: 600px;
+  display: flex;
+  height: auto;
+  width: 100px;
+  padding: 4px;
+  background-color: white;
+}
+.color {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  border: none;
+
+  background-color: white;
+}
+#clrbtn {
+  background-color: white;
+  height: 50px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+}
+.note {
+  height: 270px;
+  width: 270px;
+  border: black solid;
+}
+.title {
+  height: 35px;
+  width: 268px;
+  background-color: aqua;
+}
+.noteinput {
+  height: 85%;
+  width: 263px;
+}
+.notes {
+  position: absolute;
+  top: 10%;
+  height: 500px;
+  width: 400px;
+}
+.title {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  width: 93%;
+}
