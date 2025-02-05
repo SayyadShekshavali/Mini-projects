@@ -1,0 +1,128 @@
+.mainimg {
+  height: 96.6vh;
+  width: 99.2vw;
+}
+.mainimg .details {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: aliceblue;
+}
+.details h1 {
+  font-size: 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: animationph1 3s ease-in;
+}
+.details p {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: bold;
+  width: 500px;
+}
+#img1 {
+  height: 96.6vh;
+  width: 99.2vw;
+}
+
+.items {
+  position: absolute;
+  z-index: 100;
+  gap: 20px;
+  display: flex;
+  bottom: 20px;
+  right: 30px;
+  object-fit: cover;
+  height: 130px;
+  width: 670px;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  display: block;
+  height: 100px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1:active,
+.item2:active,
+.item3:active,
+.item4:active {
+  border-radius: 30px;
+  width: 135px;
+  height: 95px;
+  padding: 5px;
+}
+.item1:hover p,
+.item2:hover p,
+.item3:hover p,
+.item4:hover p {
+  margin-top: -10px;
+  color: black;
+}
+.items img {
+  width: 130px;
+  height: 90px;
+  border-radius: 20px;
+}
+.items img:active {
+  transform: scale(1.1, 1.1);
+}
+#ip1,
+#ip2,
+#ip3,
+#ip4 {
+  position: absolute;
+  top: 60px;
+  padding-left: 10px;
+  color: white;
+}
+
+@keyframes animationph1 {
+  0% {
+    transform: translateY(180px);
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  75% {
+    filter: blur(1px);
+  }
+  100% {
+    transform: translateY(0px);
+    filter: blur(0px);
+  }
+}
+.pn {
+  height: auto;
+  width: auto;
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  bottom: 40px;
+  left: 150px;
+}
+.pn button {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: 1px solid black;
+}
+
+.tracking {
+  height: 90px;
+  width: 175px;
+  box-shadow: 1px 1px 3px 3px black, -1px -1px 3px 3px black;
+  border-radius: 20px;
+}
