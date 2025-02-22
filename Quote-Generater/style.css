@@ -44,8 +44,7 @@ body {
   font-size: 25px;
   padding-left: 40px;
 }
-#spell:hover {
-}
+
 @keyframes animation {
   from {
     margin-top: -10px;
